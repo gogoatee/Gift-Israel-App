@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#699873"
+    android:backgroundTint="#FFFFFF"
+    tools:context="com.example.brandonmayle.giftisrael.MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="5"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_gravity="left|center"
+            android:background="#699873"
+            android:onClick="popToRecordActivity"
+            android:text="Record Volunteer Hours\n\nהקלט שעות התנדבות"
+            android:textColor="#0047b3"
+            android:textSize="5mm" />
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_gravity="right|center"
+            android:background="#699873"
+            android:onClick="popToSearchActivity"
+            android:text="Search for Opportunities\n\nחפש הזדמנויות"
+            android:textColor="#0047b3"
+            android:textSize="5mm" />
+
+        <ImageButton
+            android:id="@+id/facebookButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            android:onClick='facebookButton'
+            app:srcCompat="@drawable/facebook_logo" />
+
+        <ImageButton
+            android:id="@+id/twitterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/facebookButton"
+            android:layout_toRightOf="@+id/facebookButton"
+            android:background="@android:color/transparent"
+            android:onClick='twitterButton'
+            app:srcCompat="@drawable/twitter_logo" />
+
+        <ImageButton
+            android:id="@+id/instagramButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/twitterButton"
+            android:layout_toRightOf="@+id/twitterButton"
+            android:background="@android:color/transparent"
+            android:onClick='instagramButton'
+            app:srcCompat="@drawable/instagram_logo" />
+
+        <ImageButton
+            android:id="@+id/youtubeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/instagramButton"
+            android:layout_marginTop="11dp"
+            android:background="@android:color/transparent"
+            android:onClick="youtubeButton"
+            app:srcCompat="@drawable/youtube_logo" />
+
+        <ImageButton
+            android:id="@+id/websiteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:onClick="websiteButton"
+            app:srcCompat="@drawable/gift_israel_logo"
+            android:layout_alignTop="@+id/youtubeButton"
+            android:layout_toRightOf="@+id/instagramButton"
+            android:layout_toEndOf="@+id/instagramButton" />
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="#699873"-->
+<!--android:backgroundTint="#FFFFFF"-->
+<!--tools:context="com.example.brandonmayle.giftisrael.MainActivity">-->
+
+<!--<GridLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--tools:layout_editor_absoluteX="16dp"-->
+    <!--tools:layout_editor_absoluteY="16dp">-->
+
+    <!--<Button-->
+        <!--android:id="@+id/recordButton"-->
+        <!--android:layout_width="325dp"-->
+        <!--android:layout_height="241dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginTop="83dp"-->
+        <!--android:layout_toLeftOf="@+id/mapButton"-->
+        <!--android:background="#699873"-->
+        <!--android:onClick="popToRecordActivity"-->
+        <!--android:text="Record Volunteer Hours\n\nהקלט שעות התנדבות"-->
+        <!--android:textColor="#0047b3"-->
+        <!--android:textSize="5mm"-->
+        <!--tools:layout_editor_absoluteX="18dp"-->
+        <!--tools:layout_editor_absoluteY="50dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/mapButton"-->
+        <!--android:layout_width="325dp"-->
+        <!--android:layout_height="241dp"-->
+        <!--android:layout_alignBottom="@+id/recordButton"-->
+        <!--android:layout_toRightOf="@+id/instagramButton"-->
+        <!--android:background="#699873"-->
+        <!--android:onClick="popToSearchActivity"-->
+        <!--android:text="Search for Opportunities\n\nחפש הזדמנויות"-->
+        <!--android:textColor="#0047b3"-->
+        <!--android:textSize="5mm"-->
+        <!--tools:layout_editor_absoluteX="18dp"-->
+        <!--tools:layout_editor_absoluteY="50dp" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/facebookButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:onClick='facebookButton'-->
+        <!--app:srcCompat="@drawable/facebook_logo" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/twitterButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_toEndOf="@+id/facebookButton"-->
+        <!--android:layout_toRightOf="@+id/facebookButton"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:onClick='twitterButton'-->
+        <!--app:srcCompat="@drawable/twitter_logo" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/instagramButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_toEndOf="@+id/twitterButton"-->
+        <!--android:layout_toRightOf="@+id/twitterButton"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:onClick='instagramButton'-->
+        <!--app:srcCompat="@drawable/instagram_logo" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/youtubeButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignTop="@+id/instagramButton"-->
+        <!--android:layout_marginTop="11dp"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:onClick="youtubeButton"-->
+        <!--app:srcCompat="@drawable/youtube_logo" />-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/websiteButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:onClick="websiteButton"-->
+        <!--app:srcCompat="@drawable/gift_israel_logo"-->
+        <!--android:layout_alignTop="@+id/youtubeButton"-->
+        <!--android:layout_toRightOf="@+id/instagramButton"-->
+        <!--android:layout_toEndOf="@+id/instagramButton" />-->
+
+<!--</GridLayout>-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
